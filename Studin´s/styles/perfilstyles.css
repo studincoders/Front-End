@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10em;
+    align-content: center;
+  }
+  
+  .avatar {
+    width: 100%; /* faz com que a imagem ocupe todo o espaço disponível */
+    height: auto; /* ajusta a altura da imagem de acordo com a largura */
+    max-width: 250px; /* define um tamanho máximo para a imagem */
+    max-height: 250px; /* define um tamanho máximo para a imagem */
+    border-radius: 50%; /* adiciona um efeito de borda arredondada à imagem */
+    margin: 0 auto; /* centraliza a imagem horizontalmente */
+  }
+
+  .sidebar {
+    height: 100vh;
+    padding-left: 50px;
+    font-size: 2rem;
+    background: #758bfd;
+    align-content: center;
+  }
+  
+  .sidebar .nav-link {
+    margin-bottom: 20px;
+    color: #dddce5;
+  }
+  
+  .form-control,
+  form .form-control:focus {
+    border-color: transparent;
+    border-bottom-color: #bebcc1;
+    box-shadow: none;
+  }
+  
+  /* Media queries */
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    body {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .sidebar {
+      font-size: 1.5rem;
+      padding-left: 30px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    body {
+      font-size: 12px;
+      line-height: 1.3;
+    }
+    .sidebar {
+      font-size: 1.2rem;
+      padding-left: 20px;
+    }
+    .container {
+      padding: 10px;
+    }
+  }
+  .edit-button{
+    background-color: #aeb8fe ;
+  }
+  .guardar-button{
+    background-color: #758bfd ;
+  }
+
+
+/*NAV BAR*/
+
+nav.menu-lateral{
+  width: 80px;
+  height: 100%;
+  background-color: #202020;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #758bfd;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+  width: 300px;
+}
+
+.btn-expandir{
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir > i{
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul{
+  height: 100%;
+  list-style-type: none;
+}
+
+ul li.item-menu{
+  transition: .2s;
+}
+
+ul li.ativo{
+  background-color: #758bfd;
+}
+
+ul li.item-menu:hover{
+  background: #758bfd;
+}
+
+ul li.item-menu a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+  margin-left: 70px;
+  transition: .5s;
+  opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+  margin-left: 40px;
+  opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+/*---LOGO TOPO---*/
+
+header{
+  width: 100%;
+    height: 50px;
+
+    background: #758bfd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
+}
+
+
